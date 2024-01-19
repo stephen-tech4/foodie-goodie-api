@@ -8,6 +8,7 @@ gem "rails", "~> 7.0.8"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
+gem "pg_search"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -45,4 +46,19 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+
+gem "awesome_print"
+gem "faker"
+
+gem "graphql"
+gem "graphiql-rails", group: :development
+
+gem "rack-cors"
+gem "kaminari"
+gem "store_model"
+gem "tty-table"
+
+gem "sidekiq"
+gem "sidekiq-failures"
+gem "bullet", group: :development
 
