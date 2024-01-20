@@ -1,24 +1,44 @@
-# README
+# Foodie Goodie API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to Foodie Goodie API, a Ruby on Rails application that serves as the backend for a delightful food-related platform. This API is built with Rails 7.1, Ruby 3.1.0, GraphQL, GraphiQL, Postgresql, and utilizes the Faker gem for generating sample data.
 
-Things you may want to cover:
+## Prerequisites
+Before you begin, ensure you have the following installed on your local machine:
 
-* Ruby version
+- [Ruby](https://www.ruby-lang.org/en/documentation/installation/) (version 3.1.0)
+- [Ruby on Rails](https://guides.rubyonrails.org/getting_started.html#installing-rails) (version 7.1)
+- [PostgreSQL](https://www.postgresql.org/download/)
+- [Bundler](https://bundler.io/) (to manage gem dependencies)
 
-* System dependencies
+## Getting Started
 
-* Configuration
+1. Clone the repository to your local machine:
 
-* Database creation
+   ```
+   git clone https://github.com/stephen-tech4/foodie-goodie-api.git
 
-* Database initialization
+2. Navigate to the project directory
 
-* How to run the test suite
+    ```
+   cd foodie-goodie-api
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Install gem dependencies
 
-* Deployment instructions
+    ```
+   bundle install
 
-* ...
+4. Set up database and seed sample data
+
+    ```
+   rails db:create
+   rails db:migrate
+   rails db:seed
+
+5. Start the Rails server
+
+    ```
+   rails server
+   
+6. Access GraphQL API and GraphiQL interface at <http:localhost:3000/graphiql>
+
+Happy coding and bon appétit! 🍔🍕🍰
