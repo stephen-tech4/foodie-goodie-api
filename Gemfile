@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.8"
+gem "rails", "~> 7.1.3"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
@@ -51,7 +51,6 @@ gem "awesome_print"
 gem "faker"
 
 gem "graphql"
-gem "graphiql-rails", group: :development
 
 gem "rack-cors"
 gem "kaminari"
@@ -60,7 +59,11 @@ gem "tty-table"
 
 gem "sidekiq"
 gem "sidekiq-failures"
-gem "bullet", group: :development
-
 gem "mailcatcher"
+
+gem "sprockets-rails"
+gem "graphiql-rails", group: :development
+gem "bullet", group: :development
+gem "pry-rails", group: :development
+
 
