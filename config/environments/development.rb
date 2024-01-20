@@ -62,4 +62,8 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # For GraphiQL only and in development mode only
+  # https://github.com/rmosolgo/graphiql-rails/issues/75
+  config.assets.precompile += %w[graphiql/rails/application.js graphiql/rails/application.css]
 end
