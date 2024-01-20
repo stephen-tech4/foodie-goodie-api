@@ -62,3 +62,5 @@ gem "sidekiq"
 gem "sidekiq-failures"
 gem "bullet", group: :development
 
+gem "mailcatcher"
+
