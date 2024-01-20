@@ -21,24 +21,21 @@ Before you begin, ensure you have the following installed on your local machine:
 
     ```
    cd foodie-goodie-api
-
 3. Install gem dependencies
 
     ```
    bundle install
-
 4. Set up database and seed sample data
 
     ```
    rails db:create
    rails db:migrate
    rails db:seed
-
 5. Start the Rails server
 
     ```
    rails server
-   
+
 6. Access GraphQL API and GraphiQL interface at <http:localhost:3000/graphiql>
 
 Happy coding and bon appétit! 🍔🍕🍰
