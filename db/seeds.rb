@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Seeds::DestroyAll.destroy
+
+Seeds::SeedModifierGroup.seed
+Seeds::SeedMenus.seed
+Seeds::SeedSections.seed
+Seeds::SeedItems.seed
