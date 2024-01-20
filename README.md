@@ -16,26 +16,52 @@ Before you begin, ensure you have the following installed on your local machine:
 
    ```
    git clone https://github.com/stephen-tech4/foodie-goodie-api.git
+   ```
 
 2. Navigate to the project directory
 
     ```
    cd foodie-goodie-api
+   ```
+   
 3. Install gem dependencies
 
     ```
    bundle install
+   ```
+   
 4. Set up database and seed sample data
 
     ```
    rails db:create
    rails db:migrate
    rails db:seed
+   ```
+   
 5. Start the Rails server
 
     ```
    rails server
-
+   ```
+   
 6. Access GraphQL API and GraphiQL interface at <http:localhost:3000/graphiql>
 
-Happy coding and bon appétit! 🍔🍕🍰
+### Sample GraphQL Query
+
+Here is an example of a GraphQL query to get a list of the menus:
+
+   ```
+   query FindMenus {
+      menus {
+         label
+         startDate
+         endDate
+         
+         sections {
+            label
+            description
+            displayOrder
+         }
+      }
+   }
+   ```
