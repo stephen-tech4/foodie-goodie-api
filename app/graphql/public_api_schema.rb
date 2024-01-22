@@ -1,5 +1,5 @@
 class PublicApiSchema < GraphQL::Schema
-  disable_introspection_entry_points if Rails.env.production?
+  # disable_introspection_entry_points if Rails.env.production?
 
   mutation(PublicApi::MutationType)
   query(PublicApi::QueryType)
