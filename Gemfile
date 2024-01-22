@@ -62,7 +62,7 @@ gem "sidekiq-failures"
 gem "mailcatcher"
 
 gem "sprockets-rails"
-gem "graphiql-rails", group: :development
+gem "graphiql-rails", group: [:development, :production]
 gem "bullet", group: :development
 gem "pry-rails", group: :development
 
