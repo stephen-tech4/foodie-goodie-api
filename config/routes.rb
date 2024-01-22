@@ -6,9 +6,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  if Rails.env.development?
-    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/public_graphql" # GraphiQL endpoints interface
-  end
+  mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/public_graphql" # GraphiQL endpoints interface
 
   post "/graphql", to: "graphql#execute" # With user authentication
   post "/public_graphql", to: "public_graphql#execute" # Public access
