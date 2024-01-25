@@ -31,7 +31,8 @@ module Seeds
         price: BigDecimal("15.90")
       )
       signature_section.section_items.create(
-        item: chicken_pizza_item
+        item: chicken_pizza_item,
+        display_order: 0
       )
 
       # Tomato option
@@ -84,7 +85,8 @@ module Seeds
         price: BigDecimal("14.90")
       )
       signature_section.section_items.create(
-        item: mediterranean_item
+        item: mediterranean_item,
+        display_order: 1
       )
 
       # Tomato option
@@ -128,7 +130,6 @@ module Seeds
         default_quantity: 0,
         price_override: 8
       )
-
     end
 
     def seed_classic_pizza_items(classic_section, tomato_modifier_group, size_10_modifier_group, size_12_modifier_group, size_14_modifier_group)
@@ -140,7 +141,8 @@ module Seeds
         price: BigDecimal("18.90")
       )
       classic_section.section_items.create(
-        item: margherita_pizza_item
+        item: margherita_pizza_item,
+        display_order: 0
       )
 
       # Tomato option
@@ -195,7 +197,8 @@ module Seeds
         price: BigDecimal("19.90")
       )
       specialty_section.section_items.create(
-        item: truffle_mushroom_pizza_item
+        item: truffle_mushroom_pizza_item,
+        display_order: 0
       )
 
       # Tomato option
@@ -264,7 +267,8 @@ module Seeds
         price: BigDecimal("24.90")
       )
       specialty_section.section_items.create(
-        item: alfredo_item
+        item: alfredo_item,
+        display_order: 0
       )
 
       # Cheese option
@@ -330,7 +334,8 @@ module Seeds
         price: BigDecimal("18.90")
       )
       classic_section.section_items.create(
-        item: bolognese_item
+        item: bolognese_item,
+        display_order: 0
       )
 
       # Cheese option
