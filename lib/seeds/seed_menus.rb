@@ -8,7 +8,7 @@ module Seeds
         label: "Pizza",
         state: "ACTIVE",
         start_date: Time.zone.parse("2024-01-01"),
-        end_date:nil
+        end_date: nil
       )
 
       Menu.create(
@@ -16,7 +16,7 @@ module Seeds
         label: "Spaghetti",
         state: "ACTIVE",
         start_date: Time.zone.parse("2024-01-01"),
-        end_date:nil
+        end_date: Time.zone.parse("2024-01-14")
       )
 
       Menu.create(
@@ -24,7 +24,7 @@ module Seeds
         label: "Chinese New Year Deals",
         state: "ACTIVE",
         start_date: Time.zone.parse("2024-02-01"),
-        end_date:Time.zone.parse("2024-02-29")
+        end_date: Time.zone.parse("2024-02-29")
       )
     end
   end
