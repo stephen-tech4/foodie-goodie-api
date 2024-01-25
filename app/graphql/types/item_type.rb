@@ -2,6 +2,7 @@ module Types
   class ItemType < Types::BaseObject
     graphql_name "Item"
 
+    field :id, ID, null: false
     field :type, String, null: false
     field :identifier, String, null: false
     field :label, String, null: false

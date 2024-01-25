@@ -2,6 +2,7 @@ module Types
   class SectionType < Types::BaseObject
     graphql_name "Section"
 
+    field :id, ID, null: false
     field :identifier, String, null: false
     field :label, String, null: false
     field :description, String, null: true

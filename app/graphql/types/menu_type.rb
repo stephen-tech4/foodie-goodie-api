@@ -2,6 +2,7 @@ module Types
   class MenuType < Types::BaseObject
     graphql_name "Menu"
 
+    field :id, ID, null: false
     field :identifier, String, null: false
     field :label, String, null: false
     field :state, String, null: false
