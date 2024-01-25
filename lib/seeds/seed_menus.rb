@@ -14,7 +14,7 @@ module Seeds
       Menu.create(
         identifier: "SPAGHETTI",
         label: "Spaghetti",
-        state: "ACTIVE",
+        state: "UNAVAILABLE",
         start_date: Time.zone.parse("2024-01-01"),
         end_date: Time.zone.parse("2024-01-14")
       )
