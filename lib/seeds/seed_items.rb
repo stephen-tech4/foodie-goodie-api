@@ -28,7 +28,8 @@ module Seeds
         identifier: "BBQ_CHICKEN",
         label: "Spicy BBQ Chicken Pizza",
         description: "A fiery twist on our classic BBQ chicken pizza with a spicy kick.",
-        price: BigDecimal("15.90")
+        price: BigDecimal("15.90"),
+        quantity: rand(0..10)
       )
       SectionItem.create(
         section:signature_section,
@@ -91,7 +92,8 @@ module Seeds
         identifier: "MEDITERRANEAN_VEGGIE",
         label: "Mediterranean Veggie Pizza",
         description: "Fresh Mediterranean flavors come to life with a delightful array of veggies and herbs.",
-        price: BigDecimal("14.90")
+        price: BigDecimal("14.90"),
+        quantity: 0
       )
       SectionItem.create(
         section:signature_section,
@@ -156,7 +158,8 @@ module Seeds
         identifier: "MARGHERITA",
         label: "Margherita Pizza",
         description: "A timeless classic, featuring fresh tomatoes, mozzarella cheese, and basil leaves on a thin, crispy crust.",
-        price: BigDecimal("18.90")
+        price: BigDecimal("18.90"),
+        quantity: rand(0..10)
       )
       SectionItem.create(
         section:classic_section,
@@ -221,7 +224,8 @@ module Seeds
         identifier: "TRUFFLE_MUSHROOM",
         label: "Truffle Mushroom Pizza",
         description: "Indulge in luxury with this gourmet pizza featuring truffle-infused mushrooms, fontina cheese, and a drizzle of truffle oil.",
-        price: BigDecimal("19.90")
+        price: BigDecimal("19.90"),
+        quantity: rand(0..10)
       )
       SectionItem.create(
         section:specialty_section,
@@ -300,7 +304,8 @@ module Seeds
         identifier: "LOBSTER_SHRIMP",
         label: "Lobster and Shrimp Alfredo",
         description: "A luxurious dish featuring succulent lobster and shrimp tossed in a creamy Alfredo sauce over perfectly cooked spaghetti.",
-        price: BigDecimal("24.90")
+        price: BigDecimal("24.90"),
+        quantity: rand(0..10)
       )
       SectionItem.create(
         section: specialty_section,
@@ -378,7 +383,8 @@ module Seeds
         identifier: "BOLOGNESE",
         label: "Spaghetti Bolognese",
         description: "A timeless classic with rich, slow-cooked Bolognese sauce made with ground beef, tomatoes, and aromatic herbs served over al dente spaghetti.",
-        price: BigDecimal("18.90")
+        price: BigDecimal("18.90"),
+        quantity: rand(0..10)
       )
       SectionItem.create(
         section: classic_section,
