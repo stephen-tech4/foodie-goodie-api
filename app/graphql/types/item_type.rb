@@ -9,7 +9,14 @@ module Types
     field :description, String, null: true
 
     field :price, Float, null: false
+    field :quantity, Integer, null:false
+
+    field :is_sold_out, Boolean, null: false
 
     field :modifiers, [Modifier.graphql_type], null: false
+
+    def is_sold_out
+      object.is_sold_out?
+    end
   end
 end

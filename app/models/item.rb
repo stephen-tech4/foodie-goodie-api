@@ -13,4 +13,8 @@ class Item < ApplicationRecord
   def self.graphql_type
     Types::ItemType
   end
+
+  def is_sold_out?
+    quantity <= 0
+  end
 end
